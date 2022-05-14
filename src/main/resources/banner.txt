@@ -1,0 +1,1 @@
+Запустилось приложение ${application.title} с версией ${application.version}
