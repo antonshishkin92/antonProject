@@ -41,4 +41,10 @@ spring:
   liquibase:
     change-log: 'classpath:db/migrations/changeLog.xml'
 
+#   main:
+#    banner-mode: 'off'
+
+#  app:
+#  foodService:
+#    enabled: 1
 
