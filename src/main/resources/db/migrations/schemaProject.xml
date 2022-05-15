@@ -14,19 +14,19 @@
             <column name="Id" type="Integer">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="Category" type="VARCHAR(300)">
+            <column name="Category" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="Brand" type="VARCHAR(300)">
+            <column name="Brand" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="Number_State" type="VARCHAR(300)">
+            <column name="Number_State" type="VARCHAR(255)">
                 <constraints nullable="false" unique="true"/>
             </column>
-            <column name="Name_Owner" type="VARCHAR(300)">
+            <column name="Name_Owner" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="Surname_Owner" type="VARCHAR(300)">
+            <column name="Surname_Owner" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
             <column name="Region_code" type="Integer">
@@ -45,7 +45,7 @@
             <column name="Code" type="Integer">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="Name_Region" type="VARCHAR(300)">
+            <column name="Name_Region" type="VARCHAR(255)">
                 <constraints nullable="false" unique="true"/>
             </column>
         </createTable>
