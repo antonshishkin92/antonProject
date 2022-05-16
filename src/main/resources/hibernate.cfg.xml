@@ -5,9 +5,9 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/antonProjectDb</property>
-        <property name="connection.username">anton</property>
-        <property name="connection.password">boxing</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/projectDb</property>
+        <property name="connection.username">antosha</property>
+        <property name="connection.password">strawberry</property>
         <property name="connection.pool_size">3</property>
         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="current_session_context_class">thread</property>
