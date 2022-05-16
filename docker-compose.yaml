@@ -4,10 +4,10 @@ services:
     image: mysql:8.0.20
     restart: always
     environment:
-      MYSQL_DATABASE: 'antonProjectDb'
-      MYSQL_USER: 'anton'
-      MYSQL_PASSWORD: 'boxing'
-      MYSQL_ROOT_PASSWORD: 'boxing'
+      MYSQL_DATABASE: 'projectDb'
+      MYSQL_USER: 'antosha'
+      MYSQL_PASSWORD: 'strawberry'
+      MYSQL_ROOT_PASSWORD: 'strawberry'
     ports:
       - '3306:3306'
     expose:
