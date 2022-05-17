@@ -11,7 +11,7 @@
             </not>
         </preConditions>
         <createTable tableName="Car">
-            <column name="Id" type="Integer">
+            <column name="Id" type="BIGINT">
                 <constraints primaryKey="true"/>
             </column>
             <column name="Category" type="VARCHAR(255)">
@@ -29,7 +29,7 @@
             <column name="Surname_Owner" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="Region_code" type="Integer">
+            <column name="Region_code" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="FK_Region_code" references="Region(code)"/>
             </column>
         </createTable>
@@ -42,7 +42,7 @@
             </not>
         </preConditions>
         <createTable tableName="Region">
-            <column name="Code" type="Integer">
+            <column name="Code" type="BIGINT">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
             <column name="Name_Region" type="VARCHAR(255)">

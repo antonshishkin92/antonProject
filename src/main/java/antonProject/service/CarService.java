@@ -5,7 +5,7 @@ import antonProject.model.Car;
 import java.util.Optional;
 
 public interface CarService {
-    Optional<Car> findById(Integer id);
+    Optional<Car> findById(Long id);
     Car save(Car car);
-    void deleteById(Integer id);
+    void deleteById(Long id);
 }

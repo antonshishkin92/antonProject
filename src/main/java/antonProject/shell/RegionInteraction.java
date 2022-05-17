@@ -15,7 +15,7 @@ public class RegionInteraction {
 
     @ShellMethod(value = "Create region", key = "cr")
     public void createRegion(
-            @ShellOption({"-c", "--code"}) Integer regionCode,
+            @ShellOption({"-c", "--code"}) Long regionCode,
             @ShellOption({"-n", "--nReg"}) String nameRegion) {
         final Region region = new Region(regionCode, nameRegion);
         regionService.save(region);
@@ -24,7 +24,7 @@ public class RegionInteraction {
 
     @ShellMethod(value = "Edit region", key = "er")
     public void editRegion(
-            @ShellOption({"-c", "--code"}) Integer regionCode,
+            @ShellOption({"-c", "--code"}) Long regionCode,
             @ShellOption({"-n", "--nReg"}) String nameRegion) {
         regionService.findByCode(regionCode).ifPresent(region -> {
             region.setCode(regionCode);
@@ -37,14 +37,14 @@ public class RegionInteraction {
 
     @ShellMethod(value = "delete region", key = "dr")
     public void deleteRegion(
-            @ShellOption({"-c", "--code"}) Integer regionCode) {
+            @ShellOption({"-c", "--code"}) Long regionCode) {
         regionService.deleteByCode(regionCode);
         log.debug("Регион удален {}", regionCode);
     }
 
     @ShellMethod(value = "Find region", key = "fr")
     public void findRegion(
-            @ShellOption({"-c", "--code"}) Integer regionCode) {
+            @ShellOption({"-c", "--code"}) Long regionCode) {
         regionService.findByCode(regionCode).ifPresentOrElse(region -> log.info("Найден регион {}", region), () -> log.warn("Регион {} не найден", regionCode)
         );
     }

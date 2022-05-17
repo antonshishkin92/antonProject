@@ -14,7 +14,7 @@ public class RegionServiceImpl implements RegionService {
     private final RegionRepository regionRepository;
 
     @Override
-    public Optional<Region> findByCode(Integer code) {
+    public Optional<Region> findByCode(Long code) {
         return regionRepository.findById(code);
     }
 
@@ -24,7 +24,7 @@ public class RegionServiceImpl implements RegionService {
     }
 
     @Override
-    public void deleteByCode(Integer code) {
+    public void deleteByCode(Long code) {
         regionRepository.deleteById(code);
     }
 }

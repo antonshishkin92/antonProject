@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class Car {
     @Id
     @Column(name = "Car_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "category")
     private String category;
@@ -33,9 +33,9 @@ public class Car {
     private String surnameOwner;
 
     @Column(name = "region_code")
-    private Integer region;
+    private Long region;
 
-    public Car(Integer id, String category, String brand, String numberState, String nameOwner, String surnameOwner, Integer region) {
+    public Car(Long id, String category, String brand, String numberState, String nameOwner, String surnameOwner, Long region) {
         this.id = id;
         this.category = category;
         this.brand = brand;
@@ -45,11 +45,11 @@ public class Car {
         this.region = region;
     }
 
-    public Integer getCarId() {
+    public Long getCarId() {
         return id;
     }
 
-    public Integer getRegion() {
+    public Long getRegion() {
         return region;
     }
 }

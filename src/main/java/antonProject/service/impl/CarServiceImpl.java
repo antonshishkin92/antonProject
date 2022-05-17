@@ -14,7 +14,7 @@ public class CarServiceImpl implements CarService {
     private final CarRepository carRepository;
 
     @Override
-    public Optional<Car> findById(Integer id) {
+    public Optional<Car> findById(Long id) {
         return carRepository.findById(id);
     }
 
@@ -24,7 +24,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public void deleteById(Integer id) {
+    public void deleteById(Long id) {
         carRepository.deleteById(id);
     }
 }
