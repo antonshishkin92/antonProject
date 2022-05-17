@@ -29,7 +29,7 @@ spring:
       #create: creates the schema, destroying previous data.
       #create-drop: drop the schema at the end of the session
       #none: is all other cases.
-      ddl-auto: validate
+      ddl-auto: none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
