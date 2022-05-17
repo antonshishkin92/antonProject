@@ -4,13 +4,13 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <changeSet author="Anton Shishkin" id="Create-table-cars">
+    <changeSet author="Anton Shishkin" id="Create-table-car">
         <preConditions>
             <not>
-                <tableExists tableName="Cars"/>
+                <tableExists tableName="Car"/>
             </not>
         </preConditions>
-        <createTable tableName="Cars">
+        <createTable tableName="Car">
             <column name="Id" type="Integer">
                 <constraints primaryKey="true"/>
             </column>

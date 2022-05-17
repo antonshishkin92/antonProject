@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Data
 @NoArgsConstructor
 @Entity
-@Table(name = "Cars")
+@Table(name = "Car")
 public class Car {
     @Id
     @Column(name = "Car_id")
