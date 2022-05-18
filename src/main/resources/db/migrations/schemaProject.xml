@@ -34,4 +34,19 @@
             </column>
         </createTable>
     </changeSet>
+    <changeSet author="Anton Shishkin" id="Create-table-region">
+        <preConditions>
+            <not>
+                <tableExists tableName="Region"/>
+            </not>
+        </preConditions>
+        <createTable tableName="Region">
+            <column name="Code" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name_Region" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>
